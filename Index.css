@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+.leftside {
+  background: rgb(42, 42, 114);
+  width: 30%;
+}
+
+.leftside {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.leftside .profilePic .imgclass {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  border-radius: 200px;
+}
+
+.leftside .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.leftside .name .title {
+  color: white;
+  font-weight: 1000;
+  font-size: 23px;
+}
+.leftside .name .description {
+  color: white;
+  font-weight: 800;
+  font-size: 10px;
+}
+
+.leftside .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.leftside .contact .title {
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+}
+.leftside .contact .hrline,
+.leftside .skills .hrline {
+  width: 100%;
+}
+.leftside .contact .details img {
+  width: 20px;
+  height: auto;
+  aspect-ratio: auto;
+  color: wheat;
+}
+.leftside .contact .details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  font-size: 14px;
+}
+.leftside .contact .details .phone,
+.leftside .contact .details .email,
+.leftside .contact .details .location {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.leftside .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.leftside .skills .title {
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.leftside .skills ul {
+  width: 100%;
+}
+
+.rightside {
+  padding: 40px 20px;
+}
+.rightside .fontBolt {
+  font-weight: 900;
+}
+.rightside .description3 {
+  font-size: 13px;
+}
+
+.rightside ul {
+  padding-inline-start: 10px;
+}
+.rightside ul li {
+  line-height: 16px;
+  font-size: 12px;
+}
+.rightside .primultitlu,
+.rightside .aldoileatitlu,
+.rightside .titlecareer,
+.rightside .altreileatitlu {
+  text-align: center;
+  color: blue;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+.rightside .descriptionAbout {
+  text-align: justify;
+  font-size: 15px;
+}
+.rightside .descriptionExp {
+  display: flex;
+  flex-direction: column;
+}
+.rightside .descriptionExp .description {
+  margin-bottom: 15px;
+}
+.rightside .descriptionExp .fromTo {
+  display: flex;
+  gap: 20%;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.rightside .descriptionExp .SpecialClass {
+  margin-bottom: 15px;
+}
+.rightside .additionaldescription {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .leftside {
+    width: 100%;
+  }
+  .container .rightside {
+    width: 100%;
+  }
+}
